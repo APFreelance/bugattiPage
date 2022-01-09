@@ -1,0 +1,946 @@
+/*
+font-family: 'Mitr', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+html{
+    scroll-behavior: smooth; /*para que se desplaze suavemente entre anclas*/
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
+    margin: 0px;
+    background-color: ;
+}
+
+#pie{
+    background-color: ;
+    
+    width: 1280px;
+    height: 100px;
+    
+    margin: auto;
+    padding: 15px 0px;
+}
+
+#pie figure{
+    background-color: ;
+    
+    margin: 0px auto;
+    padding: 5px 20px;
+    
+    width: 190px;
+    height: 90px;
+
+    transition: all 0.3s;
+}
+
+#pie figure:hover{
+    transform: scale(1.1);
+}
+
+#pie figure img{
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------------------------------------*/
+
+#menu_bar{
+    background-color: darkred;
+    
+    width: 1280px;
+    height: 55px;
+    
+    margin: auto;
+
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#menu_bar ul{
+    background-color: ;
+    
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    
+    list-style: none; 
+
+}
+
+#menu_bar ul li{
+    display: inline-block;
+    
+    padding: 11px 0px;
+
+    border-bottom: 3px white solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    transition: all 0.3s;
+}
+
+#menu_bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Staatliches;
+    font-size: 1.5em;
+
+    padding: 11px 40px;
+}
+
+#menu_bar ul li:hover{
+    background-color: white;
+}
+
+#menu_bar ul li:hover > a{
+    color: black;
+}
+
+#menu_bar #search_bar{
+    background-color: ;
+    
+    float: right;
+    margin: 0px 18px;
+    margin-top: 10px; 
+}
+
+#menu_bar #search_bar input{
+    display: block;
+    float: left;
+
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.95em;
+    line-height: 16px;
+}
+
+#menu_bar #search_bar input[type="search" i]{
+    width: 260px;
+    height: 35px;
+    
+    padding: 8px;
+    background-color: ;
+
+    border-radius: 10px;
+    border: 2px rgba(0,0,0, 1) solid;
+}
+
+#menu_bar #search_bar img{
+    width: 25px;
+    height: 25px;
+    
+    padding: 6px 4px;
+}
+
+/*---------------------------------------------------*/
+
+header{
+    position: relative;
+    background-color: ;
+    
+    width: 1280px;
+    height: 650px;
+    min-width: 1280px;
+    min-height: 650px;
+    
+    margin: auto;
+}
+
+#slider_caja{
+    background-color: purple;
+    
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    
+    overflow: hidden;
+}
+
+#deslizador{
+    width: 500%;
+    height: 100%;
+    
+    position: absolute;
+    
+    animation-name: moved_images;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+#deslizador figure{
+    background-color: pink;
+    
+    width: 20%;
+    height: 100%;
+    
+    float: left;
+    margin: 0px;
+    
+    overflow: hidden;
+}
+
+@keyframes moved_images{
+    
+    0%{left: -0%;}
+    5%{left: -0%;}
+    10%{left: -0%;}
+    15%{left: -100%;}
+    20%{left: -100%;}
+    25%{left: -200%;}
+    30%{left: -200%;}
+    35%{left: -300%;}
+    40%{left: -300%;}
+    45%{left: -400%;}
+    50%{left: -400%;}
+    55%{left: -400%;}
+    60%{left: -400%;}
+    65%{left: -300%;}
+    70%{left: -300%;}
+    75%{left: -200%;}
+    80%{left: -200%;}
+    85%{left: -100%;}
+    90%{left: -100%;}
+    95%{left: -0%;}
+    100%{left: -0%;}
+}
+
+#deslizador figure img{
+    width: 100%;
+    height: 100%;
+}
+
+header h2{
+    position: absolute;
+    
+    right: 20px;
+    top: 80px;
+    
+    margin: 0px;
+    
+    text-align: right;
+    font-size: 3em;
+    color: white;
+    font-family: Mitr;
+    line-height: 55px;
+
+}
+
+header h2 strong{
+    font-size: 0.80em;
+    font-weight: 400;
+    color: darkred;
+}
+
+/*---------------------------------------------------*/
+
+#sec1{
+    background-color: rgba(0,0,0, 0.7);
+    
+    width: 1180px;
+    height: 620px;
+    
+    margin: auto;
+    padding: 25px;
+
+    border-radius: ;
+}
+
+#uno{
+    background-color: ;
+    
+    float: left;
+    
+    width: 700px;
+    height: auto;
+
+    margin-left: 35px;
+}
+
+#uno figure{
+    margin: ;
+    float: left;
+}
+
+#uno figure img{
+    width: 100%;    
+    height: 100%;    
+}
+
+#uno figure figcaption{}
+
+#uno figure figcaption p{}
+
+#fig1{
+    width: 320px;
+    height: 300px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin: 0px 20px 20px 0px;
+}
+
+#fig1 img{}
+
+#fig1 figcaption{
+    position: absolute;
+
+    background-color: rgba(0,0,0, 0.8);
+
+    border-top: 4px darkred solid;
+
+    width: 100%;
+    height: 30%;
+
+    top: 300px;
+
+    transition: all 0.3s;
+}
+
+#fig1 figcaption p{
+    color: white;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: 15px;
+
+    margin: 0px;
+    padding: 15px;
+}
+
+#fig1 figcaption p a{
+    text-decoration: ;
+    color: darkred;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: ;
+}
+
+#fig1 figcaption p strong{
+    color: darkred;
+}
+
+
+#fig1:hover > figcaption{
+    top: 206px;
+}
+
+#fig2{
+    width: 340px;
+    height: 300px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin: 0px 0px 20px 0px;
+}
+
+#fig2 img{}
+#fig2 figcaption{
+    background-color: rgba(0,0,0, 0.8);
+
+    border-bottom: 4px darkred solid;
+
+    width: 100%;
+    height: 30%;
+
+    position: absolute;
+    bottom: 300px;
+    
+    transition: all 0.3s;
+}
+
+#fig2 figcaption p{
+    color: white;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: 15px;
+
+    margin: 0px;
+    padding: 15px;
+}
+
+#fig2 figcaption p a{
+    text-decoration: ;
+    color: darkred;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: ;
+}
+
+#fig2:hover > figcaption{
+    bottom: 206px;
+}
+
+#fig3{
+    width: 680px;
+    height: 300px;
+
+    position: relative;
+
+    margin: 0px;
+}
+
+#fig3 img{}
+
+#fig3 p{
+    position: absolute;
+
+    bottom: 32%;
+    left: 10%;
+
+    color: white;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+#fig3 p b{
+    font-size: 3em;
+}
+
+#fig3 a{
+    background-color: darkred;
+
+    margin: 0px;
+    padding: 10px 20px;
+
+    color: white;
+    text-decoration: none;
+    font-family: Staatliches;
+    font-size: 1.2em;
+
+    display: inline-block;
+    position: absolute;
+
+    border-radius: 10px;
+
+    bottom: 20%;
+    left: 10%;
+
+    transition: all 0.3s;
+}
+
+#fig3 a:hover{
+    background-color: white;
+
+    color: black;
+}
+
+#fig4{
+    width: 400px;
+    height: 620px;
+    
+    margin: 0px;
+    margin-right: 35px;
+    float: right;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+#fig4 img{
+    width: 100%;    
+    height: 100%;
+}
+
+#fig4 figcaption{
+    background-color: rgba(0,0,0, 0.8);
+
+    border-top: 4px darkred solid;
+
+    width: 100%;
+    height: 25%;
+
+    position: absolute;
+
+    top: 620px;
+
+    transition: all 0.3s;
+}
+
+#fig4 figcaption p{
+    color: white;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: 18px;
+
+    margin: 0px;
+    padding: 15px;
+}
+
+#fig4 figcaption p strong{
+    color: darkred;
+    font-weight: 400;
+}
+
+#fig4 figcaption p a{
+    text-decoration: ;
+    color: darkred;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: ;
+}
+
+#fig4:hover > figcaption{
+    top: 461px;
+}
+
+/*---------------------------------------------------*/
+
+#sec2{
+    background-color: rgba(139, 0, 0, 0.7);
+    
+    width: 1180px;
+    height: 300px;
+    
+    margin: auto;
+    padding: 25px;
+}
+
+#sec2 article{
+    background-color: pink;
+    
+    width: 250px;
+    height: 200px;
+    
+    float: left;
+    margin: 0px 22.5px;
+}
+
+#sec2 article img{
+    width: 100%;
+    height: 100%;
+}
+
+#sec2 article h3{
+    margin: 5px 0px;
+
+    text-align: center;
+    color: white;
+    font-family: Staatliches;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#sec2 article p{
+    color: white;
+    text-align: left;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.95em;
+    line-height: 15px;
+
+    margin: 10px 0px;
+}
+
+#sec2 figure p b{
+    text-align: center;
+}
+
+/*---------------------------------------------------*/
+
+#sec3{
+    background-color: rgba(0,0,0, 0.8);
+    
+    width: 1180px;
+    height: 480px;
+    
+    margin: auto;
+    padding: 25px;
+}
+
+#sec3 h3{
+    margin: 0px;
+    margin-bottom: 25px; 
+
+    text-align: center;
+    color: white;
+    font-family: Staatliches;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+#sec3 article{
+    background-color: ;
+    
+    width: 240px;
+    height: auto;
+    
+    float: left;
+    margin: 0px 27.5px;
+}
+
+#sec3 article img{
+    width: 100%;    
+    height: 180px;
+}
+
+#sec3 article h4{
+    margin: 5px 0px;
+    
+    color: white;
+    font-size: 1.5em;
+    font-family: Staatliches;
+    font-weight: 400;
+}
+
+#sec3 article p{
+    color: white;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.95em;
+    line-height: 16px;
+    
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#sec3 article a{
+    background-color: darkred;
+
+    padding: 10px 20px;
+    display: inline-block;
+
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-family: Staatliches;
+    font-style: normal;
+    font-size: 1.2em;
+
+    transition: all 0.3s;
+}
+
+#sec3 article a:hover{
+    background-color: white;
+
+    color: black;
+}
+
+/*---------------------------------------------------*/
+
+#sec4{
+    background-color: rgba(139, 0, 0, 0.7);
+    
+    width: 1180px;
+    height: 180px;
+    
+    margin: auto;
+    padding: 25px;
+}
+
+#sec4 h3{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-family: Staatliches;
+    font-weight: 400;
+
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+#sec4 figure{
+    width: 145px;
+    height: 100px;
+    
+    margin: 0px 25.8px;
+    float: left;
+}
+#sec4 figure img{
+    width: ;    
+    height: 100%;
+
+    display: block;
+    margin: auto;
+}
+
+#sec4 figure img:hover{
+    filter: drop-shadow(18px 5px 15px black);
+}
+
+/*---------------------------------------------------*/
+
+#sec5{
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    width: 1180px;
+    height: 550px;
+    
+    margin: auto;
+    padding: 25px;
+}
+
+#sec5 h3{
+    margin: 0px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-family: Staatliches;
+    font-weight: 400;
+}
+
+#sec5 article{
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    width: 320px;
+    height: 415px;
+    
+    float: left;
+
+    margin: 0px 11px;
+    padding: 25px;
+}
+
+#sec5 article img, iframe{
+    width: 100%;    
+    height: 215px;
+}
+
+#sec5 article h4{
+    margin: 6px 0px;
+
+    color: darkred;
+    font-size: 1.2em;
+    font-family: Staatliches;
+    font-weight: 400;
+}
+
+#sec5 article p{
+    margin: 0px;
+    margin-bottom: 10px;
+
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.95em;
+    line-height: 16px;
+}
+
+#sec5 article a{
+    background-color: darkred;
+
+    padding: 10px 20px;
+    display: inline-block;
+
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: Staatliches;
+    font-style: normal;
+    font-size: 1.2em;
+
+
+    transition: all 0.3s;
+}
+
+#sec5 article a:hover{
+    background-color: white;
+
+    color: black;
+}
+
+/*---------------------------------------------------*/
+
+#sec6{
+    background-color: rgba(139, 0, 0, 0.8);
+    
+    width: 1180px;
+    height: 250px;
+    
+    margin: auto;
+    padding: 25px;
+}
+
+#sec6 article{
+    background-color: ;
+    
+    width: 250px;
+    height: auto;
+    
+    float: left;
+    margin: 0px 51px;
+    padding: 20px;
+}
+
+#sec6 article i{
+    font-size: 4em;
+    color: white;
+    
+    margin: 0px 90px;
+}
+
+#sec6 article h3{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-family: Staatliches;
+    font-weight: 400;
+    
+    margin: 12px 0px;
+}
+
+#sec6 article p{
+    margin: 0px;
+    
+    color: white;
+    text-align: center;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.95em;
+    line-height: 16px;
+}
+
+/*---------------------------------------------------*/
+
+footer{
+   background-color: rgba(0,0,0, 0.8);
+    
+    width: 1280px;
+    height: 320px;
+    
+    margin: auto;
+    padding: ;
+
+    border-top: 5px darkred solid;
+}
+
+footer article{
+    
+    float: left;
+    margin: 0px ;
+    padding: 20px;
+}
+
+#_uno{
+    background-color: ;
+    
+    width: 250px;
+    
+    margin-left: 120px;
+}
+
+#_uno img{
+    width: 150px;
+    height: 80px;
+    
+    margin: auto;
+    display: block;
+}
+
+#_uno i{
+    display: inline;
+    color: white;
+    font-size: 1.4em;
+    
+    margin: 15px;
+}
+
+#_uno i:hover{
+    color: darkred;
+}
+
+#_uno p{
+    color: white;
+    font-size: 1.1em;
+    line-height: 16px;
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.95em;
+    line-height: 16px;
+
+}
+#_uno form{
+    background-color: ;
+}
+#_uno form input{
+    width: 232px;
+    height: 30px;
+    
+    border: none;
+    padding: 0px 10px;
+
+    font-family: Mitr;
+    font-style: normal;
+    font-size: 0.95em;
+    line-height: 16px;
+}
+
+#_dos{
+    background-color: ;
+
+    margin-left: 100px;
+    padding-top: 55px;
+}
+
+#_dos a{
+     display: block;
+
+     text-decoration: none;
+     color: white;
+     line-height: 30px;
+     font-size: 1.1em;
+     font-family: Mitr;
+    font-style: normal;
+}
+
+#_dos a:hover{
+    text-decoration: underline;
+}
+
+#_dos a:active{
+    color: darkred;
+    text-decoration: underline;
+}
+
+#_tres{
+    background-color: ;
+
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+#_tres i{
+    display: block;
+
+    line-height: 40px;
+    font-style: normal;
+    font-size: 1.2em;
+    color: white;
+    font-family: Mitr;
+}
+
+#_tres p{
+    line-height: 20px;
+    font-style: normal;
+    font-size: 1.2em;
+    color: white;
+    font-family: Staatliches;
+}
+
+#_tres i:hover{
+    color: darkred;
+
+}
